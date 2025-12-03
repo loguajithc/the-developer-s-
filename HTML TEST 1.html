@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Fundamentals Demo</title>
+</head>
+<body>
+
+    <!-- 
+        Requirement 8: Clicking H1 and P should redirect to an external page.
+        Click functionality handled by simple JavaScript at the end of the body.
+    -->
+    <header>
+        <h1 id="clickable-header">Introduction to Data Structures (Click Me)</h1>
+        <p id="clickable-paragraph">Click this paragraph to view the official CS curriculum guide.</p>
+        <hr>
+    </header>
+
+    <h2>1. 10 HTML Formatting Tags in Practice</h2>
+    <ul>
+        <li><b>Big O Notation</b>: This is a bold concept.</li>
+        <li><strong>Algorithm Efficiency</strong>: This is strong (important) content.</li>
+        <li><i>Binary Search</i>: This algorithm name is italicized.</li>
+        <li><em>Emphasized Logic</em>: The logic must be fully checked.</li>
+        <li><mark>Memory Allocation</mark>: This concept is highlighted for review.</li>
+        <li><u>Recursion Depth</u>: The depth should not be excessive.</li>
+        <li><small>Licensing Details</small>: These details are typically small print.</li>
+        <li><del>Obsolete Code</del>: This part of the code has been removed.</li>
+        <li><ins>New Feature Implemented</ins>: This feature was recently added.</li>
+        <li><code>let x = array.pop();</code>: An example of code format.</li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 2: Article using headings (h1-h6) -->
+    <article>
+        <h2>2. Article: Understanding Operating System Processes</h2>
+        <h1>Process Management in Modern OS</h1>
+        <p>A process is an instance of a computer program being executed. It contains the program code and its current activity.</p>
+        <h2>Process States</h2>
+        <p>A process can transition between five main states: New, Ready, Running, Waiting, and Terminated.</p>
+        <h3>The Ready Queue</h3>
+        <p>Processes that are ready to execute and waiting for the CPU are held in the Ready Queue.</p>
+        <h4>Context Switching Overhead</h4>
+        <p>The time taken to save and restore the state of a CPU process is called context switching.</p>
+        <h5>Scheduling Algorithms</h5>
+        <p>The OS uses algorithms like FCFS, SJF, and Priority Scheduling to decide which process runs next.</p>
+        <h6>Inter-Process Communication (IPC)</h6>
+        <p>Mechanisms like pipes and shared memory allow different processes to exchange data.</p>
+    </article>
+    <hr>
+
+    <!-- Requirement 3: paragraph with highlighted words using bold, strong, mark -->
+    <h2>3. Paragraph with Highlighted Words</h2>
+    <p>
+        The **Time Complexity** of an algorithm determines how the runtime scales with input size. For an efficient solution, 
+        you should always aim for a <b>Logarithmic</b> or <strong>Linear time complexity</strong>, 
+        avoiding <mark>Quadratic complexity</mark> or worse when possible.
+    </p>
+    <hr>
+
+    <!-- Requirement 4: 5 math expressions using sub and sup -->
+    <h2>4. 5 Math/CS Expressions using Subscript and Superscript</h2>
+    <p>1) Binary Value: 10101<sub>2</sub></p>
+    <p>2) Array Indexing: A<sub>i</sub></p>
+    <p>3) Exponential Growth: 2<sup>n</sup></p>
+    <p>4) Quadratic Time Complexity: O(n<sup>2</sup>)</p>
+    <p>5) Logarithm Base: log<sub>2</sub>(N)</p>
+    <hr>
+
+    <!-- Requirement 5: Equation using hr tag -->
+    <h2>5. Logic Gate Equation using HR Tag</h2>
+    <hr>
+    <p>
+        De Morgan's First Law: $\overline{A \cdot B} = \overline{A} + \overline{B}$
+    </p>
+    <hr>
+
+    <!-- Requirement 6: Homepage containing 5 external links - mini portfolio -->
+    <h2>6. Essential Developer Links (Mini Portfolio)</h2>
+    <ul>
+        <li><a href="https://leetcode.com/">LeetCode</a></li>
+        <li><a href="https://www.coursera.org/">Coursera</a></li>
+        <li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a></li>
+        <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+        <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 7: 3 Links that open in a new tab -->
+    <h2>7. Key Learning Resources (New Tab)</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/@techwithtim" target="_blank">Coding Tutorials (YouTube)</a></li>
+        <li><a href="https://www.reddit.com/r/learnprogramming/" target="_blank">Learning Subreddit (Reddit)</a></li>
+        <li><a href="https://www.edx.org/course/introduction-to-computer-science" target="_blank">Harvard CS50 Course (edX)</a></li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 8: h1 and p should redirect to external page -->
+    <h2>8. Clickable Elements Test</h2>
+    <p>The H1 and the paragraph at the very top of this page are configured to redirect when clicked.</p>
+    <hr>
+
+    <!-- JavaScript for Requirement 8: Simple client-side redirection -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const externalUrl = 'https://www.khanacademy.org/computing/computer-science'; // Target external page
+
+            // Requirement 8: Clicking H1 redirects
+            document.getElementById('clickable-header').onclick = function() {
+                window.location.href = externalUrl;
+            };
+
+            // Requirement 8: Clicking P redirects
+            document.getElementById('clickable-paragraph').onclick = function() {
+                window.location.href = externalUrl;
+            };
+        });
+    </script>
+</body>
+</html>
