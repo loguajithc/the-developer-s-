@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Developer Demo</title>
+</head>
+<body>
+
+    <!-- 
+        Requirement 8: Clicking H1 and P should redirect to an external page.
+        Click functionality handled by simple JavaScript at the end of the body.
+    -->
+    <header>
+        <h1 id="clickable-header">The Developer's Daily Journal (Click Me)</h1>
+        <p id="clickable-paragraph">Click this paragraph to view our main documentation page.</p>
+        <hr>
+    </header>
+
+    <h2>1. Demonstration of 10 Core Formatting Tags</h2>
+    <ul>
+        <!-- Corrected structure: Using <li> for list items -->
+        <li><b>Bold Text (b)</b>: Used for stylistic offset.</li>
+        <li><strong>Strong Text (strong)</strong>: Used for content of serious importance.</li>
+        <li><i>Italic Text (i)</i>: Used for technical terms or thoughts.</li>
+        <li><em>Emphasized Text (em)</em>: Used for content with added stress.</li>
+        <li><mark>Highlighted Text (mark)</mark>: Used to mark text for reference.</li>
+        <li><u>Underlined Text (u)</u>: Used to denote explicit non-textual annotation.</li>
+        <li><small>Small Print (small)</small>: Used for copyright or minor text.</li>
+        <li><del>Deleted Text (del)</del>: Used to indicate content removed.</li>
+        <li><ins>Inserted Text (ins)</ins>: Used to indicate content added.</li>
+        <li><code>console.log("Code format (code)")</code>: Used for displaying code snippets.</li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 2: Article using headings (h1-h6) -->
+    <article>
+        <h2>2. Article: The Future of Serverless Architecture</h2>
+        <h1>Decoupling Front-end and Back-end Services</h1>
+        <p>Serverless computing is rapidly changing how developers approach infrastructure management.</p>
+        <h2>The Core Advantage: Scalability</h2>
+        <p>The ability to scale resources automatically based on demand is a significant factor driving adoption.</p>
+        <h3>Cost Efficiency Model</h3>
+        <p>Paying only for the execution time, rather than idle servers, results in considerable savings.</p>
+        <h4>Function-as-a-Service (FaaS) Paradigm</h4>
+        <p>Breaking down applications into small, single-purpose functions is key to this model.</p>
+        <h5>Challenges in Cold Starts</h5>
+        <p>The brief delay when a function is invoked for the first time remains a performance hurdle.</p>
+        <h6>Security Best Practices</h6>
+        <p>Implementing least-privilege principles for function execution roles is crucial.</p>
+    </article>
+    <hr>
+
+    <!-- Requirement 3: paragraph with highlighted words using bold, strong, mark -->
+    <h2>3. Paragraph with Highlighted Emphasis</h2>
+    <p>
+        The principle of **Immutability** is <b>essential</b> for complex state management in modern applications. 
+        It ensures that state changes are predictable and traceable, which is <mark>necessary for debugging and testing</mark> 
+        in distributed systems. A strong understanding of <strong>functional programming concepts</strong> aids greatly here.
+    </p>
+    <hr>
+
+    <!-- Requirement 4: 5 math expressions using sub and sup -->
+    <h2>4. Five Tech/Math Expressions using Subscript and Superscript</h2>
+    <p>1) Complexity Notation: O(n<sup>2</sup>)</p>
+    <p>2) Base-2 Representation: 1011<sub>2</sub></p>
+    <p>3) Networking Protocol: IPv6 (IP<sub>6</sub>)</p>
+    <p>4) Exponential Growth: 2<sup>n</sup></p>
+    <p>5) Database Transaction: SQL<sub>TX</sub> Commit</p>
+    <hr>
+
+    <!-- Requirement 5: Equation using hr tag -->
+    <h2>5. Algorithmic Relationship using HR Tag</h2>
+    <hr>
+    <p>
+        P &sub; NP (Polynomial time problems are a subset of Non-deterministic Polynomial time problems)
+    </p>
+    <hr>
+
+    <!-- Requirement 6: Homepage containing 5 external links - mini portfolio -->
+    <h2>6. Developer Resources (Mini Portfolio Links)</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_self">MDN Web Docs</a></li>
+        <li><a href="https://stackoverflow.com/" target="_self">Stack Overflow</a></li>
+        <li><a href="https://github.com/microsoft" target="_self">Microsoft GitHub</a></li>
+        <li><a href="https://www.google.com/search?q=web+development" target="_self">Google Search (Web Dev)</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_self">FreeCodeCamp</a></li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 7: 3 Links that open in a new tab -->
+    <h2>7. Social and Professional Links (New Tab)</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/developer-profile" target="_blank">LinkedIn Profile</a></li>
+        <li><a href="https://www.github.com/my-profile" target="_blank">GitHub Profile</a></li>
+        <li><a href="https://twitter.com/dev_updates" target="_blank">X (formerly Twitter)</a></li>
+    </ul>
+    <hr>
+
+    <!-- Requirement 8: h1 and p should redirect to external page -->
+    <h2>8. Clickable Elements Test</h2>
+    <p>The H1 and the paragraph at the very top of this page are configured to redirect when clicked.</p>
+    <hr>
+
+    <!-- JavaScript for Requirement 8: Simple client-side redirection -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const externalUrl = 'https://www.w3.org/'; // Target external page
+
+            // Requirement 8: Clicking H1 redirects
+            document.getElementById('clickable-header').onclick = function() {
+                window.location.href = externalUrl;
+            };
+
+            // Requirement 8: Clicking P redirects
+            document.getElementById('clickable-paragraph').onclick = function() {
+                window.location.href = externalUrl;
+            };
+        });
+    </script>
+</body>
+</html>
